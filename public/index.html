@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsDB-BISEW | Chat Application Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="chatApplication">
+        <div class="container">
+            <div>
+                <h3 class="logo">
+                    <i class="fa-brands fa-rocketchat"></i> IsDB-BISEW | ChatBot
+                    <p>A.K.M Mainul Hasan | ID:1267181 | Batch: CS/PNTL-M/49/01</p>
+                </h3>
+
+            </div>
+
+            <div class="userBox">
+                <h3> <i class="fa-solid fa-users-viewfinder"></i> Active Users</h3>
+                <div id="users"></div>
+            </div>
+            <div class="chatBox-wrapper">
+                <div class="chat-box">
+                    <div id="conversation" class="outputBox"></div>
+                </div>
+                <div class="chat-app">
+                    <ul class="chatapp-list">
+                        <li>
+                            <input type="text" class="inputField" id="data" style="width: 492px; height: 77px;"
+                                required />
+                        </li>
+                        <li>
+                            <ul class="medialist">
+                                <li>
+                                    <div class="fileicon-box">
+                                        <input type="file" id="imagefile" class="sendFile" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="fileicon-box">
+                                        <input type="file" id="otherfile" class="sendFile" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btnSend" id="datasend"><i class="fa fa-paper-plane"></i></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/socket.io.js"></script>
+    <script src="./js/master.js"></script>
+</body>
+</html>
